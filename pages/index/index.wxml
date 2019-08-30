@@ -1,0 +1,3 @@
+<!--index.wxml-->
+<button open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 授权获取头像昵称 </button>
+<text>{{name}}</text>

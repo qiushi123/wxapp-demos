@@ -1,0 +1,20 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/button/button",
+    "pages/cloud-data/cloud-data",
+    "pages/image/image",
+    "pages/audio/audio",
+    "pages/lessonAudio/lessonAudio",
+    "pages/index/index",
+    "pages/setting/setting",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "编程小石头",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

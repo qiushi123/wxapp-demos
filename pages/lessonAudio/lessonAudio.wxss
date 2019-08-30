@@ -1,0 +1,95 @@
+page,
+.container{
+	width: 100%;
+	height: 100%;
+	background: #fff;
+}
+.header{
+	width: 100%;
+	height: 240rpx;
+	background: #f4f0ef;
+	box-sizing: border-box;
+	padding: 20rpx 0;
+}
+.header_top{
+	width: 100%;
+	height: 120rpx;
+	box-sizing: border-box;
+	padding: 0 40rpx;
+}
+.playaudio{
+	float: left;
+	display: block;
+	width: 120rpx;
+	height: 120rpx;
+}
+.palyinfo{
+	height: 120rpx;
+	margin-left: 30rpx;
+	float: left;
+	font-size: 30rpx;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.imglist{
+	width: 100%;
+	min-height: 100rpx;
+}
+.imgshow{
+	width: 710rpx;
+	margin-bottom:-10rpx;
+  margin: auto;
+  display: block;
+}
+.sliderContainer0,
+.sliderContainer1,
+.sliderContainer2,
+.sliderContainer3,
+.sliderContainer4{
+	width: 660rpx;
+	height: 10rpx;
+	margin: 30rpx 0 0 45rpx;
+	background: #aeaeae;
+}
+.sliderBox0,
+.sliderBox1,
+.sliderBox2,
+.sliderBox3,
+.sliderBox4{
+	width: 580rpx;
+	height: 10rpx;
+	position: relative;
+	/* margin: 30rpx 0 0 45rpx; */
+	/* background: #aeaeae; */
+}
+#progress0,
+#progress1,
+#progress2,
+#progress3,
+#progress4{
+	width:580rpx;
+	height:10rpx;
+	background: #10aec2;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+ }
+#movable-view0,
+#movable-view1,
+#movable-view2,
+#movable-view3,
+#movable-view4{
+	position: absolute;
+	top: -12rpx;
+	left: 0;
+ 	width:90rpx;
+	height:34rpx;
+	line-height: 34rpx;
+	text-align: center;
+	font-size: 24rpx;
+	border-radius: 17rpx;
+	color: #fff;
+	background: #0cd2d1;
+}

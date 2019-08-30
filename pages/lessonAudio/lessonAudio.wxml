@@ -1,0 +1,107 @@
+<view class="container">
+    <!-- 第一块 -->
+    <view class="header" wx:if="{{list.length>=1}}">
+        <view class="header_top">
+            <image class='playaudio' src="/images/playaudio01.png" bindtap="play0" data-index="0" wx:if="{{!list0.play}}" />
+            <image class='playaudio' src="/images/pauseaudio01.png" bindtap="pause0" wx:if="{{list0.play}}" />
+            <view class="palyinfo">
+                <view>{{list[0].Audio_Name}}</view>
+                <view wx:if="{{list0.allTime != ''}}">{{list0.allTime}}</view>
+            </view>
+        </view>
+        <view class="sliderContainer0">
+            <view class="sliderBox0">
+                <progress percent="{{list0.percent}}" stroke-width="10rpx" backgroundColor="#aeaeae" activeColor="#10aec2" />
+                <view id="progress0" bindtap="progress0"></view>
+                <text id="movable-view0" bindtouchmove="move0" bindtouchend="end0" style="left:{{list0.left}}px">{{list0.changeCurrTime}}</text>
+            </view>
+        </view>
+    </view>
+    <view class='imglist' wx:if="{{list.length>=1}}">
+        <image src='{{zzdUrl}}/{{list[0].ChaptersAudio_ImageOne}}' class="imgshow" mode="widthFix" wx:if="{{list[0].ChaptersAudio_ImageOne != ''}}"></image>
+    </view>
+    <!-- 第二块 -->
+    <view class="header" wx:if="{{list.length>=2}}">
+        <view class="header_top">
+            <image class='playaudio' src="/images/playaudio01.png" bindtap="play1" wx:if="{{!list1.play}}" />
+            <image class='playaudio' src="/images/pauseaudio01.png" bindtap="pause1" wx:if="{{list1.play}}" />
+            <view class="palyinfo">
+                <view>{{list[1].Audio_Name}}</view>
+                <view wx:if="{{list1.allTime != ''}}">{{list1.allTime}}</view>
+            </view>
+        </view>
+        <view class="sliderContainer1" >
+            <view class="sliderBox1" >
+                <progress percent="{{list1.percent}}" stroke-width="10rpx" backgroundColor="#aeaeae" activeColor="#10aec2" />
+                <view id="progress1" bindtap="progress1"></view>
+                <text id="movable-view1" bindtouchmove="move1" bindtouchend="end1" style="left:{{list1.left}}px">{{list1.changeCurrTime}}</text>
+            </view>
+        </view>
+    </view>
+    <view class='imglist' wx:if="{{list.length>=2}}">
+        <image src='{{zzdUrl}}/{{list[1].ChaptersAudio_ImageOne}}' class="imgshow" mode="widthFix" wx:if="{{list[1].ChaptersAudio_ImageOne != ''}}"></image>
+    </view>
+    <!-- 第三块 -->
+    <view class="header" wx:if="{{list.length>=3}}">
+        <view class="header_top">
+            <image class='playaudio' src="/images/playaudio01.png" bindtap="play2" wx:if="{{!list2.play}}" />
+            <image class='playaudio' src="/images/pauseaudio01.png" bindtap="pause2" wx:if="{{list2.play}}" />
+            <view class="palyinfo">
+                <view>{{list[2].Audio_Name}}</view>
+                <view wx:if="{{list2.allTime != ''}}">{{list2.allTime}}</view>
+            </view>
+        </view>
+        <view class="sliderContainer2" >
+            <view class="sliderBox2">
+                <progress percent="{{list2.percent}}" stroke-width="10rpx" backgroundColor="#aeaeae" activeColor="#10aec2" />
+                <view id="progress2" bindtap="progress2"></view>
+                <text id="movable-view2" bindtouchmove="move2" bindtouchend="end2" style="left:{{list2.left}}px">{{list2.changeCurrTime}}</text>
+            </view>
+        </view>
+    </view>
+    <view class='imglist' wx:if="{{list.length>=3}}">
+        <image src='{{zzdUrl}}/{{list[2].ChaptersAudio_ImageOne}}' class="imgshow" mode="widthFix" wx:if="{{list[2].ChaptersAudio_ImageOne != ''}}"></image>
+    </view>
+    <!-- 第四块 -->
+    <view class="header" wx:if="{{list.length>=4}}">
+        <view class="header_top">
+            <image class='playaudio' src="/images/playaudio01.png" bindtap="play3" wx:if="{{!list3.play}}" />
+            <image class='playaudio' src="/images/pauseaudio01.png" bindtap="pause3" wx:if="{{list3.play}}" />
+            <view class="palyinfo">
+                <view>{{list[3].Audio_Name}}</view>
+                <view wx:if="{{list3.allTime != ''}}">{{list3.allTime}}</view>
+            </view>
+        </view>
+        <view class="sliderContainer3">
+            <view class="sliderBox3">
+                <progress percent="{{list3.percent}}" stroke-width="10rpx" backgroundColor="#aeaeae" activeColor="#10aec2" />
+                <view id="progress3" bindtap="progress3"></view>
+                <text id="movable-view3" bindtouchmove="move3" bindtouchend="end3" style="left:{{list3.left}}px">{{list3.changeCurrTime}}</text>
+            </view>
+        </view>
+    </view>
+    <view class='imglist' wx:if="{{list.length>=4}}">
+        <image src='{{zzdUrl}}/{{list[3].ChaptersAudio_ImageOne}}' class="imgshow" mode="widthFix" wx:if="{{list[3].ChaptersAudio_ImageOne != ''}}"></image>
+    </view>
+    <!-- 第五块 -->
+    <view class="header" wx:if="{{list.length>=5}}">
+        <view class="header_top">
+            <image class='playaudio' src="/images/playaudio01.png" bindtap="play4" wx:if="{{!list4.play}}" />
+            <image class='playaudio' src="/images/pauseaudio01.png" bindtap="pause4" wx:if="{{list4.play}}" />
+            <view class="palyinfo">
+                <view>{{list[4].Audio_Name}}</view>
+                <view wx:if="{{list4.allTime != ''}}">{{list4.allTime}}</view>
+            </view>
+        </view>
+        <view class="sliderContainer4">
+            <view class="sliderBox4">
+                <progress percent="{{list4.percent}}" stroke-width="10rpx" backgroundColor="#aeaeae" activeColor="#10aec2" />
+                <view id="progress4" bindtap="progress4"></view>
+                <text id="movable-view4" bindtouchmove="move4" bindtouchend="end4" style="left:{{list4.left}}px">{{list4.changeCurrTime}}</text>
+            </view>
+        </view>
+    </view>
+    <view class='imglist' wx:if="{{list.length>=5}}">
+        <image src='{{zzdUrl}}/{{list[4].ChaptersAudio_ImageOne}}' class="imgshow" mode="widthFix" wx:if="{{list[4].ChaptersAudio_ImageOne != ''}}"></image>
+    </view>
+</view>

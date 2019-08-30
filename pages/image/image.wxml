@@ -1,0 +1,4 @@
+<!--pages/image/image.wxml-->
+<image src="{{imgList[0]}}" bindtap="preview" data-src="{{imgList[0]}}"></image>
+<image src="{{imgList[1]}}" bindtap="preview" data-src="{{imgList[1]}}"></image>
+<image src="{{imgList[2]}}" bindtap="preview" data-src="{{imgList[2]}}"></image>
