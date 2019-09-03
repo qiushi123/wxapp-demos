@@ -1,7 +1,11 @@
 {
   "pages": [
-    "pages/login/login",
+    "pages/request/request",
+    "pages/picker/picker",
+    "pages/demo/demo",
+    "pages/houtai/houtai",
     "pages/button/button",
+    "pages/login/login",
     "pages/cloud-data/cloud-data",
     "pages/image/image",
     "pages/audio/audio",
