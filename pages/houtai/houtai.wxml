@@ -1,0 +1,1 @@
+<button bindtap="getData" >请求服务器数据</button>
